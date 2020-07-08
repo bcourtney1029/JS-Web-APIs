@@ -1,0 +1,1 @@
+For this project, I have created a timed multiple choice quiz structure using HTML and Javascript. It stores users high scores in the localStorage and is able to access the scores and actively update their high score.
