@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div id="container" style="padding: 20px;">
+            <div id="timer">30</div>
+            <div id="startQuiz">
+                <h1 style="text-align: center;">Coding Quiz</h1>
+                <p>You will have 30 seconds to complete the 4 questions. Every incorrect answer will take 10 seconds off of your timer. If you run out of time, the quiz will end. Your score will be saved at the end.</p>
+                <button id="start" class="btn btn-primary">Start Quiz</button>
+            </div>
+            
+            <div id="quiz" style = "display: none;">
+                
+                <div id="question"></div>
+                <div id="answers">
+                    <button class="choice" class="btn btn-primary" id="A" onclick="checkAnswer('A')"></button>
+                    <button class="choice" class="btn btn-primary" id="B" onclick="checkAnswer('B')"></button>
+                    <button class="choice" class="btn btn-primary" id="C" onclick="checkAnswer('C')"></button>
+                    <button class="choice" class="btn btn-primary" id="D" onclick="checkAnswer('D')"></button>
+                </div>
+            </div>
+            <div id="results"></div>
+            
+        </div>
+    </div>
+    <br>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
